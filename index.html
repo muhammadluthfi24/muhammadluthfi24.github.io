@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MODUL 5 PRETEST WEB CLIENT</title>
+  <title>MODUL 6 PRETEST WEB CLIENT</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -43,7 +43,7 @@
 </head>
 <body>
 <div class="container">
-  <h1>MODUL 5 PRETEST WEB CLIENT</h1>
+  <h1>MODUL 6 PRETEST WEB CLIENT</h1>
   <div id="login-section">
     <label>NIM:</label><br>
     <input type="text" id="nim"><br>
@@ -51,48 +51,48 @@
     <input type="text" id="nama"><br>
     <label>Password (Nama Lengkap Anda):</label><br>
     <input type="password" id="password"><br><br>
-    <button class="btn" onclick="mulaiKuis()">Mulai MODUL 5 PRETEST WEB CLIENT</button>
+    <button class="btn" onclick="mulaiKuis()">Mulai MODUL 6 PRETEST WEB CLIENT</button>
     <p id="login-error" style="color:red;"></p>
   </div>
 
   <form id="quiz-section" class="hidden" onsubmit="event.preventDefault(); kirimJawaban();">
     <div id="timer" style="text-align:right; font-weight:bold;">Waktu: 02:00</div>
-    <h3>1. Tag HTML yang digunakan untuk membuat form adalah? *</h3>
-    <input type="radio" name="soal1" value="A" onclick="disableAnswers('soal1')"> <label>input</label><br>
-    <input type="radio" name="soal1" value="B" onclick="disableAnswers('soal1')"> <label>textarea</label><br>
-    <input type="radio" name="soal1" value="C" onclick="disableAnswers('soal1')"> <label>form</label><br>
-    <input type="radio" name="soal1" value="D" onclick="disableAnswers('soal1')"> <label>button</label><br>
+    <h3>1. Dalam praktik form HTML, mengapa lebih disarankan menggunakan tipe input tertentu seperti radio atau select daripada hanya menggunakan input teks?*</h3>
+    <input type="radio" name="soal1" value="A" onclick="disableAnswers('soal1')"> <label>Agar pengguna bisa bebas mengetik. </label><br>
+    <input type="radio" name="soal1" value="B" onclick="disableAnswers('soal1')"> <label>Untuk membuat tampilan lebih rumit.</label><br>
+    <input type="radio" name="soal1" value="C" onclick="disableAnswers('soal1')"> <label>Untuk mempercepat input dan menghindari kesalahan pengetikan.</label><br>
+    <input type="radio" name="soal1" value="D" onclick="disableAnswers('soal1')"> <label>Karena input teks sudah tidak didukung di HTML5.</label><br>
 
-    <h3>2. Atribut action pada tag <form> digunakan untuk? *</h3>
-    <input type="radio" name="soal2" value="A" onclick="disableAnswers('soal2')"> <label>Mengatur URL kemana data akan dikirim</label><br>
-    <input type="radio" name="soal2" value="B" onclick="disableAnswers('soal2')"> <label>Menentukan lokasi yang digunakan untuk menampilkan respon</label><br>
-    <input type="radio" name="soal2" value="C" onclick="disableAnswers('soal2')"> <label>Menentukan metode pengiriman data</label><br>
-    <input type="radio" name="soal2" value="D" onclick="disableAnswers('soal2')"> <label>Menentukan target halaman</label><br>
+    <h3>2. Tag <select> digunakan untuk:*</h3>
+    <input type="radio" name="soal2" value="A" onclick="disableAnswers('soal2')"> <label>Menambahkan tombol radio</label><br>
+    <input type="radio" name="soal2" value="B" onclick="disableAnswers('soal2')"> <label>Menampilkan list pilihan untuk dipilih user</label><br>
+    <input type="radio" name="soal2" value="C" onclick="disableAnswers('soal2')"> <label>Menyimpan data dari form</label><br>
+    <input type="radio" name="soal2" value="D" onclick="disableAnswers('soal2')"> <label>Menampilkan kotak input teks</label><br>
 
-    <h3>3. Dua metode pengiriman data pada form adalah? *</h3>
-    <input type="radio" name="soal3" value="A" onclick="disableAnswers('soal3')"> <label>REQUEST dan RESPONSE</label><br>
-    <input type="radio" name="soal3" value="B" onclick="disableAnswers('soal3')"> <label>GET dan POST</label><br>
-    <input type="radio" name="soal3" value="C" onclick="disableAnswers('soal3')"> <label>INPUT dan OUTPUT</label><br>
-    <input type="radio" name="soal3" value="D" onclick="disableAnswers('soal3')"> <label>SEND dan RECEIVE</label><br>
+    <h3>3. Mengapa menggunakan elemen form yang sesuai penting dalam pengembangan web? *</h3>
+    <input type="radio" name="soal3" value="A" onclick="disableAnswers('soal3')"> <label>Untuk mempercantik tampilan</label><br>
+    <input type="radio" name="soal3" value="B" onclick="disableAnswers('soal3')"> <label>Untuk memperlambat proses input</label><br>
+    <input type="radio" name="soal3" value="C" onclick="disableAnswers('soal3')"> <label>Untuk meminimalkan kesalahan input dan mempercepat proses</label><br>
+    <input type="radio" name="soal3" value="D" onclick="disableAnswers('soal3')"> <label>Untuk menghindari penggunaan CSS</label><br>
 
-    <h3>4. Jika menggunakan metode pengiriman data GET, data yang dikirim akan? *</h3>
-    <input type="radio" name="soal4" value="A" onclick="disableAnswers('soal4')"> <label>Tidak terlihat di URL website</label><br>
-    <input type="radio" name="soal4" value="B" onclick="disableAnswers('soal4')"> <label>Disimpan di cookies</label><br>
-    <input type="radio" name="soal4" value="C" onclick="disableAnswers('soal4')"> <label>Dienkripsi</label><br>
-    <input type="radio" name="soal4" value="D" onclick="disableAnswers('soal4')"> <label>Terlihat di URL website</label><br>
+    <h3>4. Mengapa kita harus menambahkan tag <option> di dalam <select>? *</h3>
+    <input type="radio" name="soal4" value="A" onclick="disableAnswers('soal4')"> <label>Untuk menambah warna background</label><br>
+    <input type="radio" name="soal4" value="B" onclick="disableAnswers('soal4')"> <label>Untuk menambah validasi</label><br>
+    <input type="radio" name="soal4" value="C" onclick="disableAnswers('soal4')"> <label>Untuk menambahkan pilihan-pilihan yang akan ditampilkan</label><br>
+    <input type="radio" name="soal4" value="D" onclick="disableAnswers('soal4')"> <label>Untuk mematikan fungsi input</label><br>
 
-    <h3>5. Atribut method pada tag <form> digunakan untuk? *</h3>
-    <input type="radio" name="soal5" value="A" onclick="disableAnswers('soal5')"> <label>Mengatur URL kemana data akan dikirim.</label><br>
-    <input type="radio" name="soal5" value="B" onclick="disableAnswers('soal5')"> <label>Menentukan lokasi yang digunakan untuk menampilkan respon.</label><br>
-    <input type="radio" name="soal5" value="C" onclick="disableAnswers('soal5')"> <label>Menentukan cara protokol HTTP mengirim data.</label><br>
-    <input type="radio" name="soal5" value="D" onclick="disableAnswers('soal5')"> <label>Menentukan target halaman.</label><br>
+    <h3>5. Inputan seperti komentar panjang, kritik, dan saran paling tepat menggunakan elemen: *</h3>
+    <input type="radio" name="soal5" value="A" onclick="disableAnswers('soal5')"> <label> //<input type="text">// </label><br>
+    <input type="radio" name="soal5" value="B" onclick="disableAnswers('soal5')"> <label>//<textarea>//</label><br>
+    <input type="radio" name="soal5" value="C" onclick="disableAnswers('soal5')"> <label>//<select>//</label><br>
+    <input type="radio" name="soal5" value="D" onclick="disableAnswers('soal5')"> <label>//<input type="number">//</label><br>
 
     <br>
     <button type="submit" class="btn">Kirim Jawaban</button>
   </form>
 
   <div id="hasil" class="hidden">
-    <h2>Hasil MODUL 5 PRETEST WEB CLIENT</h2>
+    <h2>Hasil MODUL  PRETEST WEB CLIENT</h2>
     <p id="nilai"></p>
     <p>Jangan lupa untuk screenshot nilai Anda dan kirim melalui <a href="https://docs.google.com/forms/d/e/1FAIpQLSf73lKep6dc3spvhySXssmXPdfrjK7fR15NEx1ZNuyyV9J8-g/viewform?usp=sharing" target="_blank">link ini</a>.</p>
   </div>
@@ -144,16 +144,16 @@
 
   const jawabanBenar = {
     soal1: "C",
-    soal2: "A",
-    soal3: "B",
-    soal4: "D",
-    soal5: "C"
+    soal2: "B",
+    soal3: "C",
+    soal4: "C",
+    soal5: "B"
   };
 
   const tabKey = "examTabActive";
 
   if (localStorage.getItem(tabKey)) {
-    alert("Anda sudah membuka MODUL 5 PRETEST WEB CLIENT di tab lain. Anda tidak bisa membuka tab lain.");
+    alert("Anda sudah membuka MODUL 6 PRETEST WEB CLIENT di tab lain. Anda tidak bisa membuka tab lain.");
     window.close();
   } else {
     localStorage.setItem(tabKey, "true");
